@@ -1,0 +1,7 @@
+streamlit
+pandas
+nltk
+gensim
+Sastrawi
+scikit-learn
+
