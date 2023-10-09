@@ -22,9 +22,10 @@ load_data, preprocessing, feature_extraction = st.tabs(
 
 
 with load_data:
-    uploaded_file = st.file_uploader('Upload file CSV')
-    if uploaded_file is not None:
-        df = pd.read_csv(uploaded_file)
+    # uploaded_file = st.file_uploader('Upload file CSV')
+    csv_url = "https://github.com/syayidalaziz10/cobu/blob/main/data/ptaa.csv"
+    if csv_url is not None:
+        df = pd.read_csv(csv_url)
         st.header('Dataset')
         st.dataframe(df)
     else:
